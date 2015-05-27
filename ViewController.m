@@ -18,11 +18,13 @@
 
 - (IBAction)oneButtonClick:(id)sender
 {
+    __weak __typeof(self)weakSelf = self;
+    
     JHBlockAlertViewItem *item1 = [JHBlockAlertViewItem itemWithTitle:@"1" andBlock:^{
         NSLog(@"1");
     }];
     JHBlockAlertViewItem *item2 = [JHBlockAlertViewItem itemWithTitle:@"2" andBlock:^{
-        NSLog(@"2");
+        [weakSelf showMessage];
     }];
     JHBlockAlertViewItem *item3 = [JHBlockAlertViewItem itemWithTitle:@"3" andBlock:^{
         NSLog(@"3");
@@ -33,6 +35,11 @@
                                                                   cancelButtonItem:item1
                                                                   otherButtonItems:item2, item3,nil];
     [alertView show];
+}
+
+- (void)showMessage
+{
+    NSLog(@"Message");
 }
 
 - (IBAction)twoButtonClick:(id)sender

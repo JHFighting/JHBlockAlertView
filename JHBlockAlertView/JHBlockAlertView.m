@@ -12,7 +12,7 @@
 
 @property (nonatomic, copy  ) NSString         *title;
 @property (nonatomic, assign) NSInteger        itemIndex;
-@property (nonatomic, assign) dispatch_block_t block;
+@property (nonatomic, copy  ) dispatch_block_t block;
 
 @end
 
