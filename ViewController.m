@@ -28,7 +28,10 @@
         NSLog(@"3");
     }];
     
-    JHBlockAlertView *alertView = [[JHBlockAlertView alloc] initAlertViewWithTitle:@"试试" message:@"看看如何" cancelButtonItem:item1 otherButtonItems:item2, item3,nil];
+    JHBlockAlertView *alertView = [[JHBlockAlertView alloc] initAlertViewWithTitle:@"试试"
+                                                                           message:@"看看如何"
+                                                                  cancelButtonItem:item1
+                                                                  otherButtonItems:item2, item3,nil];
     [alertView show];
 }
 
@@ -44,7 +47,10 @@
         NSLog(@"3");
     }];
     
-    JHBlockAlertView *alertView = [JHBlockAlertView alertViewWithTitle:@"哈哈" message:@"嘻嘻" cancelButtonItem:item1 otherButtonItems:item2, item3, nil];
+    JHBlockAlertView *alertView = [JHBlockAlertView alertViewWithTitle:@"哈哈"
+                                                               message:@"嘻嘻"
+                                                      cancelButtonItem:item1
+                                                    otherButtonItems:item2, item3, nil];
     [alertView show];
 }
 
