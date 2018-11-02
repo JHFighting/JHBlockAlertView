@@ -7,6 +7,7 @@
 //
 
 #import "JHBlockAlertView.h"
+#import "YYModel.h"
 
 @interface JHBlockAlertViewItem ()
 
